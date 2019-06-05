@@ -1,8 +1,3 @@
-/*var gulp = require('gulp');
-var concat = require('gulp-concat');
-var prefix = require('gulp-autoprefixer');
-var sass = require('gup-sass');
-*/
 var gulp       = require('gulp'),
     sass       = require('gulp-sass'),   
     livereload = require('gulp-livereload'),
