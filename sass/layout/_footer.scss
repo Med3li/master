@@ -1,0 +1,47 @@
+/* #Footer */
+.footer {
+    padding: 40px 0;
+
+    h4 {
+        color: #4e4e4e;
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 5px;
+    }
+
+    ul {
+        li {
+            @include fontLato;
+            color: #777;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 52%;
+        }
+    }
+
+    p {
+        @include fontRoboto;
+        margin-bottom: 15px;
+        color: #777;
+    }
+
+    button {
+        padding: 12px 20px 12px 15px;
+        font-size: 17px;
+        margin-top: 45px;
+
+        i.fa-skype {
+            margin-right: 5px;
+        }
+    }
+}
+
+/*end big footer*/
+/*start footer*/
+footer {
+    height: $footer-height;
+    color: $white;
+    background: $bg;
+    padding: 16.7px 0;
+    font-size: 17px;
+}

@@ -1,0 +1,199 @@
+/* #Buttons */
+.chatbot-btn {
+    @include borderRadius(50px);
+    border-bottom-left-radius: 0;
+    @include Border(none);
+    @include fontButton;
+    @include boxShadow($box-shadow-style);
+    transition: all .2s linear;
+    position: fixed;
+    top: calc(#{$hero-bg-height} - 65px * 1.5 * 1.026666);
+    right: calc(100% - 65px * 1.5 * 1.026666);
+    // i multipled with 1.026666 for fixing the bug of the alignement between nav btn and chatbot btn
+    //just choice between (right and left) for floating
+    //choose right to go left or left to go right
+    // use this 100% -65px + 4rem convert rem to px
+    //or use this is simple left:32.5px;
+    z-index: 999;
+    background: #f2f3f8;
+    color: $bg;
+    padding: 10px;
+    margin: 20px 0;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+
+    &:hover {
+        @include boxShadow($box-shadow-style-1);
+        color: $bg;
+        transform: translateY(-7px);
+    }
+
+    &:active {
+        @include boxShadow($box-shadow-style-2);
+        transform: translateY(7px);
+        color: $bg;
+        outline: 0;
+    }
+
+    &:visited {}
+
+    &:link {}
+
+    &:focus {
+        color: $bg;
+        outline: 0;
+    }
+}
+
+//helpers(spare-helpers(spare-helper-chatbot-btn))
+//add this in helpers:spare-helper file;
+.spare-helper-chatbot-btn {
+    top: 42.5rem;
+    left: calc(100% - 65px * 1.5 * 1.026666);
+}
+
+/*end chatbot*/
+.log-btn {
+    @include borderRadius(50px);
+    @include Border(2px solid $white);
+    @include fontButton;
+    @include boxShadow($box-shadow-style);
+    @include transition;
+    padding: 10px 15px;
+    cursor: pointer;
+
+    &:hover {
+        @include boxShadow($box-shadow-style-1);
+        color: $white;
+        transform: translateY(-7px);
+    }
+
+    &:active {
+        @include boxShadow($box-shadow-style-2);
+        color: $white;
+        transform: translateY(7px);
+        outline: 0;
+    }
+
+    &:visited {}
+
+    &:link {}
+
+    &:focus {
+        color: $white;
+        outline: 0;
+    }
+}
+
+.light-btn {
+    @include borderRadius(50px);
+    @include Border(none);
+    @include fontButton;
+    @include boxShadow($box-shadow-style);
+    @include transition;
+    background: $white;
+    color: #115566;
+    padding: 15px 30px;
+    margin: 20px 0;
+    cursor: pointer;
+
+    &:hover {
+        @include boxShadow($box-shadow-style-1);
+        color: #115566;
+        transform: translateY(-7px);
+    }
+
+    &:active {
+        @include boxShadow($box-shadow-style-2);
+        transform: translateY(7px);
+        outline: 0;
+    }
+
+    &:visited {}
+
+    &:link {}
+
+    &:focus {
+        color: #115566;
+        outline: 0;
+    }
+}
+
+.dark-btn {
+    @include borderRadius(50px);
+    @include Border(2px solid $bg);
+    @include fontButton;
+    @include boxShadow($box-shadow-style);
+    @include transition;
+    background: $bg;
+    color: $white;
+    padding: 15px 30px;
+    margin: 20px 0;
+    cursor: pointer;
+
+    &:hover {
+        @include boxShadow($box-shadow-style-1);
+        color: $white;
+        transform: translateY(-7px);
+    }
+
+    &:active {
+        @include boxShadow($box-shadow-style-2);
+        transform: translateY(7px);
+        outline: 0;
+    }
+
+    &:visited {}
+
+    &:link {}
+
+    &:focus {
+        color: $white;
+        outline: 0;
+    }
+}
+.to-top-btn {
+    margin: 0px; //to remove the margin from light-btn class
+    display: none;
+    width: $to-top-btn-x;
+    height: $to-top-btn-y;
+    border-radius: 50%;
+    background-color: #346AFB;
+    box-shadow: 0px 0px 0px 10px #e4e4e48c;
+    position: fixed;
+    bottom: calc(#{$footer-height} - #{$to-top-btn-y} * .5);
+    right: calc(#{$to-top-btn-x} * 0.5);
+    color: white;
+    z-index: 999;
+    padding: 11.8px;
+
+    &:hover {
+        @include boxShadow($box-shadow-style-1);
+        transform: translateY(-2px);
+        color: white;
+        background-color: #215dfffc;
+    }
+
+    &:active {
+        @include boxShadow($box-shadow-style-2);
+        transform: translateY(2px);
+        outline: 0;
+        color: white;
+    }
+
+    &:visited {
+        color: white;
+    }
+
+    &:link {}
+
+    &:focus {
+        outline: 0;
+        color: white;
+    }
+
+    .fa-2x {
+        font-size: 1.5em;
+    }
+}

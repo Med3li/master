@@ -1,0 +1,75 @@
+/* #Header */
+.header {
+    background-color: $bg;
+    height: $header-height;
+    background-image: linear-gradient(to right top, $light-bg, $meduim-bg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% calc(#{$header-height} / (98.8 / 88)), 0 100%);
+    @include transition;
+
+    .logo {
+        height: 35px;
+        display: block;
+    }
+
+    .box {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        backface-visibility: hidden; //learn more about this
+
+        h1 {
+            @include animation;
+            display: block;
+        }
+
+        p {
+            @include animation-1;
+            display: block;
+        }
+
+        .hero-shot {
+            @include animation-2;
+            height: calc(520px - 150px);
+            width: calc(1190px - 670px);
+            margin-top: $heading-margin-top / 2;
+        }
+    }
+}
+.header_2 {
+    background: #ccc; //#e5e5e5;
+    height: 450px; //calc(#{$header-height} / 1,2857142857142857142857142857143);
+    clip-path: none;
+    @include transition;
+
+    .box {
+        backface-visibility: hidden; //learn more about this
+
+        h2 {
+            color: #404040;
+            font-size: 30px;
+            font-weight: 500;
+            @include animation;
+            display: block;
+        }
+
+        p {
+            color: #5d5d5d;
+            font-size: 18px;
+            margin-bottom: $paragraph-margin-bottom / 2;
+            display: block;
+
+            &:first-of-type {
+                margin-bottom: $paragraph-margin-bottom / 2 / 2 / 1.1;
+            }
+        }
+
+        .hero-shot {
+            @include animation-2;
+            height: calc(520px - 150px);
+            width: calc(1190px - 670px);
+            margin-top: $heading-margin-top / 2;
+        }
+    }
+}

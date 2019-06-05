@@ -1,0 +1,13 @@
+/* #blog specific styles*/
+.blog {
+    background-color: #f9f9f9;
+    padding-bottom: 100px;
+
+    h2 {
+        color: $bg;
+
+        hr {
+            @include HRule;
+        }
+    }
+}

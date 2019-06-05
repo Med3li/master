@@ -1,0 +1,45 @@
+/* #contact specific styles*/
+.contact {
+    @include fontRoboto;
+
+    .margin-box {
+        margin: 70px 0 20px;
+    }
+
+    h2 {
+        color: $bg;
+
+        hr {
+            @include HRule;
+        }
+    }
+}
+.mailing {
+    padding: 60px;
+
+    h2 {
+        font-size: 19px;
+        margin: 0;
+        margin-bottom: 28px;
+        color: #3d3d3d;
+    }
+
+    ul:first-of-type {
+        li:last-of-type {
+            margin-bottom: 26.9999998px;
+        }
+    }
+
+    li {
+        list-style: none;
+        color: #666;
+    }
+
+    textarea {
+        margin-top: 49.2px;
+    }
+
+    button {
+        float: right;
+    }
+}

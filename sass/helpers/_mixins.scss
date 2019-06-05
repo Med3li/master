@@ -1,0 +1,80 @@
+/* #Sass Mixins */
+@mixin boxShadow($box-shadow-style) {
+    box-shadow: $box-shadow-style;
+}
+
+@mixin HRule {
+    border: 1.8px solid $bg;
+    width: 80px;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+@mixin fontLato {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+@mixin fontRoboto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@mixin fontButton {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+@mixin borderRadius($r) {
+    -webkit-border-radius: $r;
+    -moz-border-radius: $r;
+    -o-border-radius: $r;
+    -ms-border-radius: $r;
+    border-radius: $r;
+}
+
+@mixin Border($b) {
+    border: $b;
+}
+
+@mixin U-Select($value) {
+    -webkit-user-select: $value;
+    -moz-user-select: $value;
+    -ms-user-select: $value;
+    user-select: $value; // disable selecting from user
+}
+
+@mixin transition {
+    transition: all .2s linear;
+}
+
+@mixin animation {
+    animation-name: moveInleft;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    /*to solve glitch problem*/
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    /*glitch problem solved*/
+}
+
+@mixin animation-1 {
+    animation-name: moveInright;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    /*to solve glitch problem*/
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    /*glitch problem solved*/
+}
+
+@mixin animation-2 {
+    animation-name: moveInright-1;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    /*to solve glitch problem*/
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    /*glitch problem solved*/
+}

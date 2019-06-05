@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Website Name</title>
+    <!-- IE Compatibility Meta-->
+    <meta name="viewport" content="X-UA-Compatible" content="IE=edge">
+    <!--First Mobile Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An enterprise-class UI design language and React-based implementation with a set of high-quality React components, one of best React UI library for enterprises">
+    <link rel="stylesheet" href="css/bootstrap-%20v3.3.7.css">
+    <!--polyfills-->
+    <!--If change bootstrap proprietes-->
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <!--end if-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--If it IE 9-->
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <!--end if-->
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/png">
+</head>
+<body oncopy="return false" oncut="return false" onpaste="return true">
+<!--start navbar-->
+   <!--
+   I used the methodology 'Naming convention' in BEM(Block Element Modifier)
+   :CSS architecture
+   exemple:block-name__elem-name_mod-name_mod-val
+   -->
+   <div class="navigation">
+       <input class="navigation-checkbox" type="checkbox" name="checkbox" id="navi-toggle">
+       <label class="navigation-button" for="navi-toggle" >
+           <span class="navigation-icon">&nbsp;</span>
+       </label>
+       
+       <div class="navigation-background">&nbsp;</div>
+ 
+        <nav class="navigation-nav">
+         <ul class="list-unstyled navigation-list">
+            <li class="navigation-item">
+                <a class="navigation-link uppercase" href="index.html"><span class="hidden-xs">01 </span>Home</a>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link uppercase" href="About_us.html"><span class="hidden-xs">02 </span>About us</a>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link uppercase" href="Portfolio.html"><span class="hidden-xs">03 </span>Portfolio</a>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link uppercase" href="Faq.html"><span class="hidden-xs">04 </span>FAQ</a>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link uppercase" href="Contact.html"><span class="hidden-xs">05 </span>Contact</a>
+            </li>
+         </ul>
+       </nav>
+   </div>
+   <!--end navbar-->
+   <!--select a language-->
+<!--language-->
+    <!-- start header-->
+    <header class="header">
+        <div class="container">
+         <div class="navbar-header">   
+         <a href="index.html">           
+            <img src="img/logo-white.png" alt="logo" class="logo">
+          </a>
+         </div>
+<!--this is will show on large and meduim screen-->
+         <div class="box hidden-md hidden-lg">
+         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1 class="uppercase primary-heading">we do<br> everything</h1>
+             <p class="primary-p">Lorem ipsum is simply dummy text of the printing and<br>type setting industry.Lorem ipsum has been the<br>industry's standard dummy text ever since the 1500s,</p>
+             <button class="light-btn">Read More</button>
+         </div>
+        </div>
+<!--this is will show on extra small and small screen-->
+         <div class="box hidden-xs hidden-sm">
+         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <h1 class="uppercase primary-heading">we do<br> everything</h1>
+             <p class="primary-p">Lorem ipsum is simply dummy text of the printing<span class="hidden-md"> and</span><span class="hidden-xs hiddem-sm hidden-lg">,</span><br>type setting industry.Lorem ipsum has been the<br>industry's standard dummy text ever since the 1500s.</p>
+             <button class="light-btn">Read More</button>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+             <img class="hero-shot img-responsive" src="img/iphone7.png" alt="iphone7 mockup to tell a story about my brand">
+         </div>
+        </div>
+        </div>
+   </header>    
+   <!--end header-->
+    <!--start navbar-->           
+            <!-- Collect the nav links, forms, and other content for toggling -->
+       <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+      <!--  </div>
+        <!-- /.container-fluid -->
+    <!--</nav>
+    <!--end navbar-->
+    <!--start section1-->
+    <section class="our-jobs text-center">
+    <div class="container">
+    <h2 class="uppercase">what we do<hr></h2>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 card">
+                <img src="img/android.png" alt="android icon">
+                <h3 class="uppercase">we love android</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 card">
+                <img src="img/customer-service.png" alt="customer icon">
+                <h3 class="uppercase">support with care</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+            </div> 
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 card">
+                <img src="img/puzzle-copy5.png" alt="bug icon">
+                <h3 class="uppercase">updates & bug fixes</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+            </div> 
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 card">
+                <img src="img/office-material.png" alt="organized things icon">
+                <h3 class="uppercase">organized code</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 card">
+                <img src="img/contract.png" alt="contract icon">
+                <h3 class="uppercase">well documented</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+            </div> 
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 card">
+                <img src="img/dollar-symbol.png" alt="dollar symbol icon">
+                <h3 class="uppercase">reasonable pricing</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--end section1-->
+     <!--start chatbot-->
+    <button class="chatbot-btn spare-helper-chatbot-btn">
+        <i class="fa fa-comments fa-2x text-center" aria-hidden="true"></i>
+    </button>
+    <div class="chatbot-card Ndisplay">
+      <div class="chatbot-card-one">
+      <div class="chatbot-card-one__title">
+            <img src="img/client-2.png" alt="avatar">
+                     <label></label>
+            <img src="img/client-1.png" alt="avatar">
+            <img src="img/client-3.png" alt="avatar">
+          <p>Replys Within 1 Min</p>
+      </div>                                    
+      <div class="chatbot-card-one__body">
+        <button class="start-chat dark-btn">Start chat</button>
+      </div>
+    </div>
+    <div class="chatbot-card-two">
+      <div class="chatbot-card-two__title">
+        <div class="row">
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <label></label>
+            <img src="img/client-1.png" alt="avatar"></div>
+          <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <div class="chatbot-card-one__title__text">
+        <span>Alexander</span>
+        <p class="writing-status">Typing...</p>
+        </div>
+          </div>
+        </div>        
+       </div>
+      <div class="chatbot-card-two__body"></div>
+      <div class="chatbot-card-two__messageinput">
+        <input type="text" placeholder="Write a reply" onfocus="this.placeholder=''" onblur="this.placeholder='Write a reply'">
+        <button><i class="fa fa-plus fa-1x" aria-hidden="true"></i></button>
+        <button><i class="fa fa-paper-plane fa-1x" aria-hidden="true"></i><button>
+      </div>
+    </div>
+    </div>
+    <!--end chatbot-->
+    <!--start section2-->
+    <section class="release text-center">
+<div class="container">
+  <h2 class="uppercase">our latest released<hr></h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-1">
+                test1
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-1">
+                test2
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-1">
+                test3
+            </div>
+        </div>
+        <button class="dark-btn">View All</button>
+        </div>
+
+    </section>
+    <!--end section2-->
+    <!--start section3-->
+    <section class="work text-center">
+        <div class="container-fluid">
+        <h2 class="uppercase">our latest work <hr></h2>
+        <ul class="uppercase">
+            <li>all</li>
+            <li>web</li>
+            <li>android</li>
+            <li>ios</li>
+            <hr>
+        </ul>    
+        <div class="showcase">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
+            </div>
+      
+        </div>
+       <button class="dark-btn">View All</button> 
+        </div>
+    </section>
+    <!--end section3-->
+    <!--start section4-->
+    <section class="stats text-center">
+        <div class="container">
+            <h2 class="uppercase">our stats<hr></h2>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <h4>200 +</h4>
+                    <span>Projects Completed</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                     <h4>150 +</h4>
+                    <span>Satisfied Clients</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                     <h4>144 +</h4>
+                    <span>Positive Feedback</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                     <h4>100 +</h4>
+                    <span>Freebies Released</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--end section4-->
+    <!--start section5-->
+    <section class="review text-center">
+        <div class="container">
+            <h2 class="uppercase">review by our client<hr></h2>
+              <!--start carousel-->
+    <div  class="carousel slide" data-ride="carousel" id="carousel-example-generic">
+        <!-- Indicators -->
+        <ol class="carousel-indicators hidden-xs">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="review-box">
+               <h3>Larisa Maskalyova</h3>
+               <h4>California. La</h4>
+               <ul class="list-unstyled">
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+               <span>2.5</span>
+               </ul>              
+               <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+            </div>
+        </div>
+            <div class="item"> 
+                <div class="review-box">
+               <h3>Marcus Doe</h3>
+               <h4>London. Uk</h4>
+               <ul class="list-unstyled">
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+<span>2</span>
+               </ul>   
+               <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+            </div>
+        </div>
+            <div class="item">
+                <div class="review-box">
+               <h3>Nick Larson</h3>
+               <h4>California. La</h4>
+               <ul class="list-unstyled">
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                   <span>3.5</span>
+               </ul>   
+               <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+            </div>
+        </div>
+            <div class="item"> 
+                <div class="review-box">
+               <h3>Lisa Strong</h3>
+               <h4>Ridgewood. NJ</h4>
+               <ul class="list-unstyled">
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <span>5</span>
+               </ul>   
+               <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+            </div>
+        </div>
+            <div class="item"> 
+                <div class="review-box">
+            <h3>Paul Kiton</h3>
+               <h4>Wyckoff. NJ</h4>
+               <ul class="list-unstyled">
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                   <span>5</span>
+               </ul>   
+               <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+            </div>
+        </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+              <span class="sr-only">Previous</span> </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+              <span class="sr-only">Next</span> </a>
+        </div>
+    </div>
+    <!--end carousel-->
+        </div>
+    </section>
+    <!--end section5-->
+    <!--start section6-->
+    <section class="team text-center">
+        <div class="container">
+            <h2 class="uppercase">meet with us<hr></h2>
+            <img src="img/team.png" alt="our team" class="img-responsive">
+        </div>
+    </section>
+    <!--end section6-->
+    <!--start section7-->
+    <section class="blog text-center">
+        <div class="container">
+            <h2 class="uppercase">latest blog post<hr></h2>
+<div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">test</div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">test</div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">test</div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">test</div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">test</div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">test</div>  
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">test</div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">test</div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">test</div>
+</div>
+<button class="dark-btn">View All</button>
+</div>
+    </section>
+    <!--end section7-->
+    <!--start section8-->
+    <section class="contact text-center">
+        <div class="container">
+            <h2 class="uppercase">wanna hire us?<hr></h2>
+            <div class="margin-box">
+ <div class="row">
+     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+         <form role="form">
+               <label for="name" class="sr-only">Your Name</label>
+             <input class="form-control input-lg" type="text" name="name" placeholder="Your Name" onfocus="this.placeholder=''" onblur="this.placeholder='Your Name'" id="my-input">
+               <label for="name" class="sr-only">Your Email</label>
+             <input class="form-control input-lg" type="text" name="mail" placeholder="Your Email" onfocus="this.placeholder=''" onblur="this.placeholder='Your Email'" id="my-input">
+               <label for="name" class="sr-only">Your Contact Number</label>
+             <input class="form-control input-lg" type="text" name="number" id="my-input" placeholder="Your Contact Number"  onfocus="this.placeholder=''" onblur="this.placeholder='Your Contact Numberer'">
+               <label for="name" class="sr-only">Subject</label>
+             <input class="form-control input-lg" type="text" name="subject" placeholder="Subject"  ofocus="this.placeholder=''" onblur="this.placeholder='Subject'" id="my-input">
+         </form>
+     </div>
+     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+         <label for="name" class="sr-only">Message</label>
+         <textarea class="form-control input-lg"  type="text" placeholder="Describe Your Message" onfocus="this.placeholder=''" onblur="this.placeholder='Describe Your Message'" id="message"></textarea>
+     </div>
+ </div>
+
+ </div>
+ <button class="dark-btn">Send</button>     
+
+ </div>        
+    </section>
+    <!--end section8-->
+    <!--start section9-->
+    <section class="recommendation text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <h3 class="lead uppercase">love for long term relationship</h3>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <button class="light-btn">Recommendations</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--end section9-->
+    <!--start section10-->
+    <section class="footer text-left">
+        <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <h4 class="uppercase">connect with us</h4>
+                <ul class="list-unstyled">                  
+                    <li>Explore our Ecosystem</li>
+                    <li>Terms and Conditions</li>
+                    <li>Community Meetups</li>
+                    <li>Privacy Policies</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <h4 class="uppercase">services</h4>
+                <ul class="list-unstyled">
+                    <li>Android Development</li>
+                    <li>IOS Developement</li>
+                    <li>Web Development</li>
+                    <li>UI-UX Design</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <h4 class="uppercase">support</h4>
+                <ul class="list-unstyled">
+                    <li>Support</li>
+                    <li>Contact</li>
+                    <li><button class="dark-btn">
+                        <i class="fa fa-skype fa-1x" aria-hidden="true"></i>Start Chat</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <h4 class="uppercase">latest from blog</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--end section10-->
+    <!--start footer-->
+    <footer class="text-center">
+        <div class="container">
+            Copyright &copy; 2019 "$website-name" .All Rights Reserved
+        </div>
+    </footer>
+    <!--end footer-->
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+       
+    </script>
+</body>
+
+</html>
