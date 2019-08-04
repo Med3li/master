@@ -1,16 +1,4 @@
-NB:what is vh unit? ,change vh to px for background problem,the difference between vh ,px,rem,em..?
-vh=view height
-vw=view width
-rem=16px
-portfolio:add pictures of my work and add function to ul 
-blog:complete the blogs page search how to change content in html
-home: fix header problem, add pictures,change the names of clients in review by our client section
-faq:done
-about:add pictures to latest released section
-404 error:done!
-contact:done!
 
-create the 404 error page:done 
 add arabic language
 collection:+++++(+(option(button] EN/AR)-)-----
 -:arabic
