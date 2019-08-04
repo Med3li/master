@@ -1,1 +1,2 @@
-server + live reload for watching developer's project
+responsive issue
+server + live reload for watching developer's project :done!

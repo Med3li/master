@@ -5,7 +5,9 @@
     background-image: linear-gradient(to right top, $light-bg, $meduim-bg);
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% calc(#{$header-height} / (98.8 / 88)), 0 100%);
+   // clip-path: polygon(0 0, 100% 0, 100% calc(#{$header-height} / (98.8 / 88)), 0 100%);
+    transform: skewY(4deg);
+    transform-origin: 100%;
     @include transition;
 
     .logo {
@@ -15,9 +17,9 @@
 
     .box {
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        backface-visibility: hidden; //learn more about this
+        top: 15%;
+        transform: skewY(-4deg);
+        transform-origin: 100%;
 
         h1 {
             @include animation;

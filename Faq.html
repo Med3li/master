@@ -25,61 +25,55 @@
 </head>
 
 <body oncopy="return false" oncut="return false" onpaste="return true">
-<!--start navbar-->
-   <!--
+    <!--start navbar-->
+    <!--
    I used the methodology 'Naming convention' in BEM(Block Element Modifier)
    :CSS architecture
    exemple:block-name__elem-name_mod-name_mod-val
    -->
-   <div class="navigation">
-       <input class="navigation-checkbox" type="checkbox" id="navi-toggle">
-       
-       <label class="navigation-button" for="navi-toggle">
-           <span class="navigation-icon">&nbsp;</span>
-       </label>
-       
-       <div class="navigation-background">&nbsp;</div>
- 
+    <div class="navigation">
+        <input class="navigation-checkbox" type="checkbox" id="navi-toggle">
+        <label class="navigation-button" for="navi-toggle">
+            <span class="navigation-icon">&nbsp;</span>
+        </label>
+        <div class="navigation-background">&nbsp;</div>
         <nav class="navigation-nav">
-         <ul class="list-unstyled navigation-list">
-            <li class="navigation-item">
-                <a class="navigation-link uppercase" href="index.html"><span class="hidden-xs">01 </span>Home</a>
-            </li>
-            <li class="navigation-item">
-                <a class="navigation-link uppercase" href="About_us.html"><span class="hidden-xs">02 </span>About us</a>
-            </li>
-            <li class="navigation-item">
-                <a class="navigation-link uppercase" href="Portfolio.html"><span class="hidden-xs">03 </span>Portfolio</a>
-            </li>
-            <li class="navigation-item">
-                <a class="navigation-link uppercase" href="Blog.html"><span class="hidden-xs">04 </span>Blog</a>
-            </li>
-            <li class="navigation-item">
-                <a class="navigation-link uppercase" href="Contact.html"><span class="hidden-xs">05 </span>Contact</a>
-            </li>
-         </ul>
-       </nav>
-   </div>
-   <!--end navbar-->
-   
+            <ul class="list-unstyled navigation-list">
+                <li class="navigation-item">
+                    <a class="navigation-link uppercase" href="index.html"><span class="hidden-xs">01 </span>Home</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link uppercase" href="About_us.html"><span class="hidden-xs">02 </span>About us</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link uppercase" href="Portfolio.html"><span class="hidden-xs">03 </span>Portfolio</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link uppercase" href="Blog.html"><span class="hidden-xs">04 </span>Blog</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link uppercase" href="Contact.html"><span class="hidden-xs">05 </span>Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--end navbar-->
     <!-- start header-->
-    <header  class="hero-bg text-center uppercase">
-     <div class="container">
-      <div class="navbar-header">              
-         <a href="index.html">           
-            <img class="logo" src="img/logo-white.png" alt="logo">
-          </a>
-      </div>
-       <span>faq</span>
-       <h1>frequently asked questions</h1>
-     </div>
-   </header>
-   <!--end header-->
+    <header class="hero-bg text-center uppercase">
+        <div class="container">
+            <div class="navbar-header fix">
+                <a href="index.html">
+                    <img class="logo" src="img/logo-white.png" alt="logo">
+                </a>
+            </div>
+            <span>faq</span>
+            <h1>frequently asked questions</h1>
+        </div>
+    </header>
+    <!--end header-->
     <!--start navbar-->
-    
-           
-            <!-- Collect the nav links, forms, and other content for toggling -->
-           <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
                     <li><a href="#">About Us</a></li>
@@ -89,88 +83,86 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-      <!--  </div>
+    <!--  </div>
         <!-- /.container-fluid -->
     <!--</nav>
     <!--end navbar-->
-    
     <!--start section-->
-  <section class="" style="color:red;font-weight: bold;">
-      <div class="container">
-          <div class="row">This FAQ section not yet complete !</div>
-      </div>
-  </section>
+    <section class="" style="color:red;font-weight: bold;">
+        <div class="container">
+            <div class="row">This FAQ section not yet complete !</div>
+        </div>
+    </section>
     <!--end section-->
-   
     <!--start section1-->
     <section class="contact text-center">
         <div class="container">
-            <h2 class="uppercase">wanna hire us?<hr></h2>
+            <h2 class="uppercase">wanna hire us?
+                <hr>
+            </h2>
             <div class="margin-box">
- <div class="row">
-     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-         <form role="form">
-               <label for="name" class="sr-only">Your Name</label>
-             <input class="form-control input-lg" type="text" name="name" placeholder="Your Name" onfocus="this.placeholder=''" onblur="this.placeholder='Your Name'" id="my-input">
-               <label for="name" class="sr-only">Your Email</label>
-             <input class="form-control input-lg" type="text" name="mail" placeholder="Your Email" onfocus="this.placeholder=''" onblur="this.placeholder='Your Email'" id="my-input">
-               <label for="name" class="sr-only">Your Contact Number</label>
-             <input class="form-control input-lg" type="text" name="number" id="my-input" placeholder="Your Contact Number"  onfocus="this.placeholder=''" onblur="this.placeholder='Your Contact Numberer'">
-               <label for="name" class="sr-only">Subject</label>
-             <input class="form-control input-lg" type="text" name="subject" placeholder="Subject"  ofocus="this.placeholder=''" onblur="this.placeholder='Subject'" id="my-input">
-         </form>
-     </div>
-     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-         <label for="name" class="sr-only">Message</label>
-         <textarea class="form-control input-lg"  type="text" placeholder="Describe Your Message" onfocus="this.placeholder=''" onblur="this.placeholder='Describe Your Message'" id="message"></textarea>
-     </div>
- </div>
-
- </div>
-
- </div>
- <button class="dark-btn">Send</button>           
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <form role="form">
+                            <label for="name" class="sr-only">Your Name</label>
+                            <input class="form-control input-lg" type="text" name="name" placeholder="Your Name" onfocus="this.placeholder=''" onblur="this.placeholder='Your Name'" id="my-input">
+                            <label for="name" class="sr-only">Your Email</label>
+                            <input class="form-control input-lg" type="text" name="mail" placeholder="Your Email" onfocus="this.placeholder=''" onblur="this.placeholder='Your Email'" id="my-input">
+                            <label for="name" class="sr-only">Your Contact Number</label>
+                            <input class="form-control input-lg" type="text" name="number" id="my-input" placeholder="Your Contact Number" onfocus="this.placeholder=''" onblur="this.placeholder='Your Contact Numberer'">
+                            <label for="name" class="sr-only">Subject</label>
+                            <input class="form-control input-lg" type="text" name="subject" placeholder="Subject" ofocus="this.placeholder=''" onblur="this.placeholder='Subject'" id="my-input">
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <label for="name" class="sr-only">Message</label>
+                        <textarea class="form-control input-lg" type="text" placeholder="Describe Your Message" onfocus="this.placeholder=''" onblur="this.placeholder='Describe Your Message'" id="message"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="dark-btn">Send</button>
     </section>
     <!--end section1-->
     <!--start chatbot-->
     <button class="chatbot-btn">
-        <i class="fa fa-comments fa-2x text-center" aria-hidden="true">            
+        <i class="fa fa-comments fa-2x text-center" aria-hidden="true">
         </i>
     </button>
     <div class="chatbot-card Ndisplay">
-      <div class="chatbot-card-one">
-      <div class="chatbot-card-one__title">
-            <img src="img/client-2.png" alt="avatar">
-                     <label></label>
-            <img src="img/client-1.png" alt="avatar">
-            <img src="img/client-3.png" alt="avatar">
-          <p>Replys Within 1 Min</p>
-      </div>                                    
-      <div class="chatbot-card-one__body">
-        <button class="start-chat dark-btn">Start chat</button>
-      </div>
-    </div>
-    <div class="chatbot-card-two">
-      <div class="chatbot-card-two__title">
-        <div class="row">
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <label></label>
-            <img src="img/client-1.png" alt="avatar"></div>
-          <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            <div class="chatbot-card-one__title__text">
-        <span>Alexander</span>
-        <p class="writing-status">Typing...</p>
+        <div class="chatbot-card-one">
+            <div class="chatbot-card-one__title">
+                <img src="img/client-2.png" alt="avatar">
+                <label></label>
+                <img src="img/client-1.png" alt="avatar">
+                <img src="img/client-3.png" alt="avatar">
+                <p>Replys Within 1 Min</p>
+            </div>
+            <div class="chatbot-card-one__body">
+                <button class="start-chat dark-btn">Start chat</button>
+            </div>
         </div>
-          </div>
-        </div>        
-       </div>
-      <div class="chatbot-card-two__body"></div>
-      <div class="chatbot-card-two__messageinput">
-        <input type="text" placeholder="Write a reply" onfocus="this.placeholder=''" onblur="this.placeholder='Write a reply'">
-        <button><i class="fa fa-plus fa-1x" aria-hidden="true"></i></button>
-        <button><i class="fa fa-paper-plane fa-1x" aria-hidden="true"></i><button>
-      </div>
-    </div>
+        <div class="chatbot-card-two">
+            <div class="chatbot-card-two__title">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <label></label>
+                        <img src="img/client-1.png" alt="avatar"></div>
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                        <div class="chatbot-card-one__title__text">
+                            <span>Alexander</span>
+                            <p class="writing-status">Typing...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-card-two__body"></div>
+            <div class="chatbot-card-two__messageinput">
+                <input type="text" placeholder="Write a reply" onfocus="this.placeholder=''" onblur="this.placeholder='Write a reply'">
+                <button><i class="fa fa-plus fa-1x" aria-hidden="true"></i></button>
+                <button><i class="fa fa-paper-plane fa-1x" aria-hidden="true"></i><button>
+            </div>
+        </div>
     </div>
     <!--end chatbot-->
     <!--start section2-->
@@ -190,42 +182,42 @@
     <!--start section3-->
     <section class="footer text-left">
         <div class="container">
-       <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                <h4 class="uppercase">connect with us</h4>
-                <ul class="list-unstyled">                  
-                    <li>Explore our Ecosystem</li>
-                    <li>Terms and Conditions</li>
-                    <li>Community Meetups</li>
-                    <li>Privacy Policies</li>
-                </ul>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <h4 class="uppercase">connect with us</h4>
+                    <ul class="list-unstyled">
+                        <li>Explore our Ecosystem</li>
+                        <li>Terms and Conditions</li>
+                        <li>Community Meetups</li>
+                        <li>Privacy Policies</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <h4 class="uppercase">services</h4>
+                    <ul class="list-unstyled">
+                        <li>Android Development</li>
+                        <li>IOS Developement</li>
+                        <li>Web Development</li>
+                        <li>UI-UX Design</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <h4 class="uppercase">support</h4>
+                    <ul class="list-unstyled">
+                        <li>Support</li>
+                        <li>Contact</li>
+                        <li><button class="dark-btn">
+                                <i class="fa fa-skype fa-1x" aria-hidden="true"></i>Start Chat</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <h4 class="uppercase">latest from blog</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                <h4 class="uppercase">services</h4>
-                <ul class="list-unstyled">
-                    <li>Android Development</li>
-                    <li>IOS Developement</li>
-                    <li>Web Development</li>
-                    <li>UI-UX Design</li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                <h4 class="uppercase">support</h4>
-                <ul class="list-unstyled">
-                    <li>Support</li>
-                    <li>Contact</li>
-                    <li><button class="dark-btn">
-                        <i class="fa fa-skype fa-1x" aria-hidden="true"></i>Start Chat</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                <h4 class="uppercase">latest from blog</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-            </div>
-        </div>
         </div>
     </section>
     <!--end section3-->
@@ -241,7 +233,6 @@
     <script type="text/javascript" src="js/main.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      
     </script>
 </body>
 

@@ -49,6 +49,10 @@
     transition: all .2s linear;
 }
 
+@mixin transition-v($t) {
+    transition: all $t linear;
+}
+
 @mixin animation {
     animation-name: moveInleft;
     animation-duration: 1s;

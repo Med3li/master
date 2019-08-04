@@ -1,0 +1,15 @@
+menu
+back
+footer
+
+Awww...Don't Cry. //D'oh! Something fell flat.
+It's just a 404 Error!
+We apologize for the inconvenience.If the problem continues,let's us [know=change color](contact us).
+|
+Explore some of our best picks below
+.home
+.about
+.portfolio
+.faq
+....
+....

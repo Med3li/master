@@ -8,6 +8,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 @charset 'utf-8';
 /*start color*/
 @import 'color/colors';
@@ -17,6 +18,7 @@ html {
 /*end typography variables*/
 /*start variables*/
 @import 'helpers/variables';
+
 /*end variables*/
 /*start scrollbar*/
 /* width */
@@ -39,12 +41,13 @@ html {
 /*end scrollbar*/
 /*start mixin*/
 @import 'helpers/mixins';
+
 /*end mixin
 /*animations*/
 @keyframes moveInleft {
     0% {
         opacity: 0;
-        transform: translateX(-100px); 
+        transform: translateX(-100px);
         // X goes from left to right
         // Y goes from top to bottom
     }
@@ -62,7 +65,7 @@ html {
 @keyframes moveInright {
     0% {
         opacity: 0;
-        transform: translateX(100px); 
+        transform: translateX(100px);
         //X goes from left to right
         //Y goes from top to bottom
     }
@@ -80,7 +83,7 @@ html {
 @keyframes moveInright-1 {
     0% {
         opacity: 0;
-        transform: translateX(100px); 
+        transform: translateX(100px);
         //X goes from left to right
         //Y goes from top to bottom
     }
@@ -104,7 +107,7 @@ html {
 
 .primary-heading {
     color: $white;
-    font-size: 60px;
+    font-size: 35px;
     @include fontLato;
     letter-spacing: 35;
 }
@@ -127,7 +130,7 @@ h2 {
 
 p {
     text-align: left;
-    margin-bottom: $paragraph-margin-bottom;
+    margin-bottom: $paragraph-margin-bottom / 2;
 }
 
 h3 {
@@ -145,18 +148,23 @@ h4 {
 /*end typography*/
 /*start components buttons*/
 /*start chatbot*/
-.Ndisplay{display:none;}
+.Ndisplay {
+    display: none;
+}
+
 @import 'components/buttons';
-.chatbot-card-one{
-    position:fixed;
-    z-index:9999;
+
+.chatbot-card-one {
+    position: fixed;
+    z-index: 9999;
     top: calc(#{$hero-bg-height} - 145px * 1.5 * 1.026666 * 1.075);
     left: calc(100% - 200px * 1.5 * 1.026666 * 1.05);
     width: 290px;
     height: 400px;
     background-color: #f1f1f1;
     border-radius: 15px;
-    &__title{
+
+    &__title {
         height: 175px;
         color: #a5a4a7;
         background-color: #fff;
@@ -165,28 +173,31 @@ h4 {
         border-top-left-radius: 15px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
-        label{
+
+        label {
             width: 22.5px;
             height: 22.5px;
-            background:$dark-green;
+            background: $dark-green;
             border-radius: 50%;
-            border:2px solid #fff;
+            border: 2px solid #fff;
             position: absolute;
-            top: 25%; 
+            top: 25%;
             left: 37.5%;
             z-index: 2;
         }
-        img:first-of-type{
-            position:absolute;
+
+        img:first-of-type {
+            position: absolute;
             left: 47.5% * 1.19;
-            opacity:.6;
+            opacity: .6;
             width: 50px;
             border-radius: 50%;
             border: 2px solid $bg;
             cursor: pointer;
         }
-        img:nth-of-type(2){
-            position:absolute;
+
+        img:nth-of-type(2) {
+            position: absolute;
             z-index: 1;
             left: 37.5%;
             top: 10%;
@@ -195,41 +206,50 @@ h4 {
             border: 2px solid $bg;
             cursor: pointer;
         }
-        img:last-of-type{
-            position:absolute;
-            left:27.5%;
-            opacity:.6;
+
+        img:last-of-type {
+            position: absolute;
+            left: 27.5%;
+            opacity: .6;
             width: 50px;
             border-radius: 50%;
             border: 2px solid $bg;
             cursor: pointer;
         }
-        p{margin-top: 47.5%;
-          text-align: center;
-          font-size: 17px;}
-      
+
+        p {
+            margin-top: 47.5%;
+            text-align: center;
+            font-size: 17px;
+        }
+
     }
-    &__body{height: 275px;
-            button{
-               position: absolute;
-               padding: 10px 25px;
-               width: 150px;
-               top: 75%;
-               left: 25%;
+
+    &__body {
+        height: 275px;
+
+        button {
+            position: absolute;
+            padding: 10px 25px;
+            width: 150px;
+            top: 75%;
+            left: 25%;
+        }
+    }
+
 }
-    }
-   
-    }
-.chatbot-card-two{
-    position:fixed;
-    z-index:9998;
+
+.chatbot-card-two {
+    position: fixed;
+    z-index: 9998;
     top: calc(#{$hero-bg-height} - 145px * 1.5 * 1.026666 * 1.075);
     left: calc(100% - 200px * 1.5 * 1.026666 * 1.05);
     width: 290px;
     height: 400px;
     background-color: #f1f1f1;
     border-radius: 15px;
-    &__title{
+
+    &__title {
         height: 85px;
         color: #a5a4a7;
         background-color: #fff;
@@ -238,52 +258,80 @@ h4 {
         border-top-left-radius: 15px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
-        label{
+
+        label {
             width: 15px;
             height: 15px;
-            background:$dark-green;
+            background: $dark-green;
             border-radius: 50%;
-            border:2px solid #fff;
+            border: 2px solid #fff;
             position: absolute;
-            top: 75%; 
+            top: 75%;
         }
-        img{width: 50px;
+
+        img {
+            width: 50px;
             border-radius: 50%;
             border: 2px solid $bg;
             cursor: pointer;
         }
-        &__text{
-        span{font-size: 18px;}
-        p{font-size: 15px;
-            color: #ccc;}
+
+        &__text {
+            span {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 15px;
+                color: #ccc;
+            }
+        }
     }
+
+    &__body {
+        height: 275px;
     }
-    &__body{height: 275px;}
-    &__messageinput{
+
+    &__messageinput {
         background-color: #fff;
-        color:#999;
+        color: #999;
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
-        input{width: 70%;
-            border:none;
+
+        input {
+            width: 70%;
+            border: none;
             height: 40px;
             font-size: 16px;
             border-bottom-left-radius: 15px;
-            text-indent:15px;
-            &:focus{
-                outline:none;
+            text-indent: 15px;
+
+            &:focus {
+                outline: none;
             }
-              }
-        button{background: none;
-            border:none;
+        }
+
+        button {
+            background: none;
+            border: none;
             margin-left: 10px;
             transition: color .4s ease;
-        &:first-of-type{margin-left:30px; }
-        &:focus{outline: none}
-        &:hover {color: $bg;}
+
+            &:first-of-type {
+                margin-left: 30px;
+            }
+
+            &:focus {
+                outline: none
+            }
+
+            &:hover {
+                color: $bg;
+            }
         }
     }
 }
+
 /*end components button*/
 /*start placeholder helps*/
 /*end placeholders helpers*/
@@ -310,6 +358,7 @@ body {
 /*end navigation*/
 /*start header*/
 @import 'layout/header';
+
 /*end header*/
 /*start our jobs*/
 .our-jobs {
@@ -396,24 +445,28 @@ body {
     }
 
     .card-1 {
-        @include transition;
-        @include boxShadow($box-shadow-style);
-        margin: 50px 20px;
-        background-color: $white;
-        width: 350px;
-        height: 350px;
-        cursor: pointer;
+        margin-bottom: 50px;
 
-        &:hover {
-            transform: scale(1.01, 1.01);
-            @include boxShadow($box-shadow-style-3)
+        a {
+            display: block;
         }
 
-        &:active {
-            @include boxShadow($box-shadow-style-2)
-        }
+        img {
+            @include transition;
+            @include boxShadow($box-shadow-style);
+            margin: 50px 0 0;
+            background-color: $white;
+            cursor: pointer;
 
-        ;
+            &:hover {
+                transform: scale(1.01, 1.01);
+                @include boxShadow($box-shadow-style-3)
+            }
+
+            &:active {
+                @include boxShadow($box-shadow-style-2)
+            }
+        }
     }
 
     a {
@@ -446,7 +499,11 @@ body {
         list-style: none;
 
         li {
-            @include transition;
+            &.active {
+                color: #4bf;
+                font-weight: 600;
+            }
+
             color: #c5c5c5;
             display: inline-block;
             margin: 0 10px;
@@ -454,37 +511,39 @@ body {
 
             &:hover {
                 color: $bg;
-                transform: translateY(-1px);
             }
 
-            ;
         }
     }
 
     .showcase {
+        @include transition-v(.4s);
         background: $bg;
         margin: 40px 0;
+        overflow: hidden;
+        height: 680px;
 
         .card-2 {
-            @include boxShadow($box-shadow-style-2);
-            @include transition;
-            cursor: pointer;
-            width: 400px;
-            height: 300px;
-            background-color: $white;
-            margin: 20px;
-
-            &:hover {
-                transform: scale(1.01, 1.01);
-                @include boxShadow($box-shadow-style-3);
-            }
-
-            &:active {
+            img {
                 @include boxShadow($box-shadow-style-2);
+                cursor: pointer;
+                margin-top: 35px;
+                @include transition;
+
+                &:hover {
+                    transform: scale(1.01, 1.01);
+                    @include boxShadow($box-shadow-style-3);
+                }
+
+                &:active {
+                    @include boxShadow($box-shadow-style-2);
+                }
             }
 
-            ;
+
+
         }
+
     }
 }
 
@@ -568,7 +627,7 @@ body {
         }
 
         p {
-            padding: 10px 120px;
+            padding: 10px 15px;
             color: #969696;
         }
 
@@ -605,6 +664,7 @@ body {
 /*end our blog*/
 /*start contact*/
 @import 'pages/contact';
+
 /*end contact*/
 /*start recommendation*/
 .recommendation {
@@ -624,12 +684,13 @@ body {
 /*end recommendation*/
 /*start big footer*/
 @import 'layout/footer';
+
 /*end footer*/
 /*end primary style*/
 //start about us
 .hero-bg {
     background: $hero-bg;
-    padding: 60px;
+    padding: 60px 0;
     height: $hero-bg-height;
 
     span {
@@ -689,6 +750,7 @@ body {
         margin-bottom: 30px;
     }
 }
+
 //start 404 error page
 .error {
     background-color: #e4e4e48c; //#333 was here
@@ -742,18 +804,20 @@ address {
 /*start media query*/
 @media (max-width: 320px) {
     .navbar-header {
-        top: 1rem;
+        top: 2rem;
         left: 14rem;
     }
 
     .chatbot-btn {
         display: none;
     }
-    .chatbot-card-two{
+
+    .chatbot-card-two {
         display: none;
     }
-    .chatbot-card-one{
-        display:none;
+
+    .chatbot-card-one {
+        display: none;
     }
 
     .header_2 {
@@ -794,19 +858,22 @@ address {
 
 @media (min-width: 321px) and (max-width: 375px) {
     .navbar-header {
-        top: 1rem;
-        left: 17rem;
+        top: 2rem;
+        left: 14rem;
     }
 
     .chatbot-btn {
         display: none;
     }
-    .chatbot-card-two{
+
+    .chatbot-card-two {
         display: none;
     }
-    .chatbot-card-one{
-        display:none;
+
+    .chatbot-card-one {
+        display: none;
     }
+
     .header_2 {
         height: 500px;
     }
@@ -835,18 +902,20 @@ address {
 
 @media (min-width: 376px) and (max-width: 425px) {
     .navbar-header {
-        top: 1.8rem;
-        left: 19.2rem;
+        top: 2rem;
+        left: 18rem;
     }
 
     .chatbot-btn {
         display: none;
     }
-     .chatbot-card-two{
+
+    .chatbot-card-two {
         display: none;
     }
-    .chatbot-card-one{
-        display:none;
+
+    .chatbot-card-one {
+        display: none;
     }
 
     .header_2 {
@@ -876,15 +945,22 @@ address {
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
+    .navbar-header {
+        top: 8rem;
+    }
+
     .chatbot-btn {
         display: none;
     }
-    .chatbot-card-two{
+
+    .chatbot-card-two {
         display: none;
     }
-    .chatbot-card-one{
-        display:none;
+
+    .chatbot-card-one {
+        display: none;
     }
+
     .header_2 {
         height: 390px;
     }
@@ -928,6 +1004,10 @@ address {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    .fix {
+        top: 8rem;
+    }
+
     .header_2 {
         height: 443.75px;
     }
@@ -951,7 +1031,7 @@ address {
                 width: 0;
             }
 
-            &:nth-of-type(n+4):after {
+            &:nth-of-type(n+3):after {
                 top: 10%;
                 width: 0;
             }
@@ -974,7 +1054,11 @@ address {
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {}
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .header .box {
+        top: 25%;
+    }
+}
 
 @media (min-width: 1441px) and (max-width: 2560px) {}
 
@@ -983,28 +1067,16 @@ address {
 /* No media query since the extra-large breakpoint has no upper bound on its width*/
 /*end media query*/
 /*
+--for big problem.
+-for small problem.
 --chat button:complete the chat button;
---navbar:create a nav bubbel using the checkbox hack/ fix the navigation and icon/the problem has been solved!:all problems have been solved!;
---header:edit the font size/delete img/remove the clip-path:using media query/the problem has been solved!/fixed the glitch in button;
---what we do: all problems have been solved!;
---our latest released:add picture/ delete the box property(height& width& background..)/ 
- add& activate the view all button function using ****.js;
---our latest work:add pictures/ delete the box property(height& width& background..)/ the problem has been solved!/
- add border-bottom property to the li hover&active../ add& activate li function using ******.js/
- add& activate the view all button function using ****.js;
 --our stats:add counter on numbers using css animation (:after/:before) or ****.js;
---review by our clients:edit the h3& h4 names;
 --latest blog post:add blog posts using css3 properties/ if click on view all the user go to blog page ;
---wanna hire us:the problem has been solved!/ add functions on send button;
---recommendations:learn about the recommendations and how can me use recommendation button;
---big footer: add the href="" on skype button;
---footer: all problems have been solved!;
+--wanna hire us:add functions on send message via button;
+--recommendations:learn about the recommendations and how can i use recommendation button;
+--big footer: add the href="" on skype button/add a in list with link with html pages
 
-add light/dark mode on blog page
-complete chat button animation / transition & change color on hover...
-real chat/all things about chat......
-add border top to work section and using js functions .....
-fix the header & responsive problem using media query
-developping other pages about/ faq/portfolio ....
-complete the components/ helpers/ layout/ color/ base in every file.
+-add light/dark mode on blog page
+-real chat/all things about chat......
+-complete faq and about page
 */

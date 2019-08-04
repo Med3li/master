@@ -21,7 +21,8 @@
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
     <!--end if-->
-    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/png"> </head>
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/png">
+</head>
 
 <body oncopy="return false" oncut="return false" onpaste="return true">
     <!--start navbar-->
@@ -48,10 +49,11 @@
     <!-- start header-->
     <header class="hero-bg text-center uppercase">
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header fix">
                 <a href="index.html"> <img class="logo" src="img/logo-white.png" alt="logo"> </a>
             </div> <span>portfolio</span>
-            <h1>browse our portfolio</h1> </div>
+            <h1>browse our portfolio</h1>
+        </div>
     </header>
     <!--end header-->
     <!--start navbar-->
@@ -73,34 +75,66 @@
     <!--start section-->
     <section class="work text-center">
         <div class="container-fluid">
-            <h2 class="uppercase">our latest work <hr></h2>
+            <h2 class="uppercase">our latest work
+                <hr>
+            </h2>
             <ul class="uppercase">
-                <li>all</li>
-                <li>web</li>
-                <li>android</li>
-                <li>ios</li>
-                <hr> </ul>
+                <li class="portfolio-btn active">all</li>
+                <li class="portfolio-btn ">web</li>
+                <li class="portfolio-btn ">android</li>
+                <li class="portfolio-btn ">ios</li>
+                <hr>
+            </ul>
             <div class="showcase">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card-2">test</div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-2" data-type="web">
+                        <img class='img-responsive' src="https://place-hold.it/400x300/FFFFFF/333/red.png&text=test1&fontsize=15">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-2" data-type="ios">
+                        <img class='img-responsive' src="https://place-hold.it/400x300/FFFFFF/333/red.png&text=test2&fontsize=15">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-2" data-type="web">
+                        <img class='img-responsive' src="https://place-hold.it/400x300/FFFFFF/333/red.png&text=test3&fontsize=15">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-2" data-type="android">
+                        <img class='img-responsive' class='img-responsive' src="https://place-hold.it/400x300/FFFFFF/333/red.png&text=test4&fontsize=15">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-2" data-type="web">
+                        <img class='img-responsive' src="https://place-hold.it/400x300/FFFFFF/333/red.png&text=test5&fontsize=15">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-2" data-type="android">
+                        <img class='img-responsive' src="https://place-hold.it/400x300/FFFFFF/333/red.png&text=test6&fontsize=15">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-2" data-type="web">
+                        <img class='img-responsive' src="https://place-hold.it/400x300/FFFFFF/333/red.png&text=test7&fontsize=15">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-2" data-type="android">
+                        <img class='img-responsive' src="https://place-hold.it/400x300/FFFFFF/333/red.png&text=test8&fontsize=15">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-2" data-type="ios">
+                        <img class='img-responsive' src="https://place-hold.it/400x300/FFFFFF/333/red.png&text=test9&fontsize=15">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-2" data-type="web">
+                        <img class='img-responsive' src="https://place-hold.it/400x300/FFFFFF/333/red.png&text=test10&fontsize=15">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-2" data-type="android">
+                        <img class='img-responsive' src="https://place-hold.it/400x300/FFFFFF/333/red.png&text=test11&fontsize=15">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-2" data-type="web">
+                        <img class='img-responsive' src="https://place-hold.it/400x300/FFFFFF/333/red.png&text=test12&fontsize=15">
+                    </div>
                 </div>
             </div>
-            <button class="dark-btn">View All</button>
+            <button class="dark-btn view-btn">View more</button>
         </div>
     </section>
     <!--end section-->
     <!--start section1-->
     <section class="contact text-center">
         <div class="container">
-            <h2 class="uppercase">wanna hire us?<hr></h2>
+            <h2 class="uppercase">wanna hire us?
+                <hr>
+            </h2>
             <div class="margin-box">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -125,42 +159,42 @@
     </section>
     <!--end section1-->
     <!--start chatbot-->
-    <button class="chatbot-btn"> <i class="fa fa-comments fa-2x text-center" aria-hidden="true">            
+    <button class="chatbot-btn"> <i class="fa fa-comments fa-2x text-center" aria-hidden="true">
         </i> </button>
-        <div class="chatbot-card Ndisplay">
-      <div class="chatbot-card-one">
-      <div class="chatbot-card-one__title">
-            <img src="img/client-2.png" alt="avatar">
-                     <label></label>
-            <img src="img/client-1.png" alt="avatar">
-            <img src="img/client-3.png" alt="avatar">
-          <p>Replys Within 1 Min</p>
-      </div>                                    
-      <div class="chatbot-card-one__body">
-        <button class="start-chat dark-btn">Start chat</button>
-      </div>
-    </div>
-    <div class="chatbot-card-two">
-      <div class="chatbot-card-two__title">
-        <div class="row">
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <label></label>
-            <img src="img/client-1.png" alt="avatar"></div>
-          <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            <div class="chatbot-card-one__title__text">
-        <span>Alexander</span>
-        <p class="writing-status">Typing...</p>
+    <div class="chatbot-card Ndisplay">
+        <div class="chatbot-card-one">
+            <div class="chatbot-card-one__title">
+                <img src="img/client-2.png" alt="avatar">
+                <label></label>
+                <img src="img/client-1.png" alt="avatar">
+                <img src="img/client-3.png" alt="avatar">
+                <p>Replys Within 1 Min</p>
+            </div>
+            <div class="chatbot-card-one__body">
+                <button class="start-chat dark-btn">Start chat</button>
+            </div>
         </div>
-          </div>
-        </div>        
-       </div>
-      <div class="chatbot-card-two__body"></div>
-      <div class="chatbot-card-two__messageinput">
-        <input type="text" placeholder="Write a reply" onfocus="this.placeholder=''" onblur="this.placeholder='Write a reply'">
-        <button><i class="fa fa-plus fa-1x" aria-hidden="true"></i></button>
-        <button><i class="fa fa-paper-plane fa-1x" aria-hidden="true"></i><button>
-      </div>
-    </div>
+        <div class="chatbot-card-two">
+            <div class="chatbot-card-two__title">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <label></label>
+                        <img src="img/client-1.png" alt="avatar"></div>
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                        <div class="chatbot-card-one__title__text">
+                            <span>Alexander</span>
+                            <p class="writing-status">Typing...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-card-two__body"></div>
+            <div class="chatbot-card-two__messageinput">
+                <input type="text" placeholder="Write a reply" onfocus="this.placeholder=''" onblur="this.placeholder='Write a reply'">
+                <button><i class="fa fa-plus fa-1x" aria-hidden="true"></i></button>
+                <button><i class="fa fa-paper-plane fa-1x" aria-hidden="true"></i><button>
+            </div>
+        </div>
     </div>
     <!--end chatbot-->
     <!--start section2-->
@@ -168,7 +202,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                    <h3 class="lead uppercase">love for long term relationship</h3> </div>
+                    <h3 class="lead uppercase">love for long term relationship</h3>
+                </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <button class="light-btn">Recommendations</button>
                 </div>

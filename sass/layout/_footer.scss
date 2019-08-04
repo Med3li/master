@@ -9,15 +9,13 @@
         padding-bottom: 5px;
     }
 
-    ul {
-        li {
+        span {
             @include fontLato;
             color: #777;
             cursor: pointer;
             margin-top: 10px;
-            width: 52%;
+            display: block;
         }
-    }
 
     p {
         @include fontRoboto;
@@ -39,7 +37,6 @@
 /*end big footer*/
 /*start footer*/
 footer {
-    height: $footer-height;
     color: $white;
     background: $bg;
     padding: 16.7px 0;
